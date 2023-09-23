@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Child Mortality at 2021",
+  "title": "Child Mortality Rate at 2021",
   "width": 1000,
   "height": 500,
   "projection": {"type": "equalEarth"},
@@ -29,9 +29,8 @@
             },
             "key": "Country",
             "fields": ["Mortality rate"]
+          }
         }
-        },
-        {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
     ],
     "mark": {"type": "geoshape"},
     "encoding": {
@@ -48,3 +47,4 @@
     }
 ]
 }
+
