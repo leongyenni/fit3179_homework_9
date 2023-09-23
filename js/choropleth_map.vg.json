@@ -16,7 +16,7 @@
           "as": "note"
         }
       ],
-      "mark": {"type": "geoshape", "fill": "lightgray"},
+      "mark": {"type": "geoshape", "fill": "gray", "stroke": "white"},
       "encoding": {"tooltip": {"field": "note"}}
     }, 
     {
@@ -24,7 +24,7 @@
         "url": "https://raw.githubusercontent.com/leongyenni/fit3179_homework_9/master/js/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
-      "mark": {"type": "geoshape", "fill": "powderblue"}
+      "mark": {"type": "geoshape", "fill": "#c6dbef"}
     },
     {
       "data": {
