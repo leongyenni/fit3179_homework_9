@@ -16,9 +16,23 @@
           "as": "note"
         }
       ],
-      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+      "mark": {"type": "geoshape", "fill": "lightgray"},
       "encoding": {"tooltip": {"field": "note"}}
     }, 
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "powderblue"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "steelblue"}
+    },
     {
     "transform": [
         {
@@ -37,7 +51,8 @@
         "color": {
         "field": "Mortality rate",
         "type": "quantitative",
-        "scale": {"type": "log"}
+        "scale": {"type": "log", "nice": false},
+        "legend": {"title": "Child Mortality Rate"}
         },
         "tooltip": [
             {"field": "properties.NAME", "type": "nominal", "title": "Country"},
